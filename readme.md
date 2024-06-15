@@ -16,8 +16,8 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
 1. Clona el repositorio desde GitHub:
 
     ```bash
-    git clone <URL_DEL_REPOSITORIO_PRIVADO>
-    cd <NOMBRE_DEL_REPOSITORIO>
+    git clone https://github.com/ensolvers-github-challenges/HoppenstedtMandiola-116816.git
+    cd HoppenstedtMandiola-116816
     ```
 
 2. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
@@ -27,8 +27,6 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
     DB_USERNAME=my_user
     DB_PASSWORD=My_Str0ng_P@ssw0rd!
     DB_NAME=my_database
-    DB_NAME_TEST=my_database_test
-    DB_NAME_PROD=my_database_prod
     DB_HOST=127.0.0.1
     ```
 
@@ -58,3 +56,56 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 
 ```bash
 ./start.sh
+
+## Scripts
+
+### Backend
+- `npm start`: Inicia el servidor de backend.
+- `npm run dev`: Inicia el servidor de backend en modo desarrollo con nodemon.
+
+### Frontend
+- `npm start`: Inicia el servidor de desarrollo de Vite para el frontend.
+- `npm run build`: Crea un build de producción para el frontend.
+- `npm run preview`: Previsualiza el build de producción del frontend.
+
+## Estructura del Proyecto
+/project-root
+│
+├── /backend
+│ ├── /controllers
+│ ├── /models
+│ ├── /routes
+│ ├── /services
+│ ├── config
+│ │ ├── config.js
+│ ├── package.json
+│ └── ...
+│
+├── /frontend
+│ ├── /src
+│ │ ├── /components
+│ │ ├── /pages
+│ │ ├── App.js
+│ │ ├── index.js
+│ │ └── ...
+│ ├── public
+│ ├── package.json
+│ └── ...
+│
+├── .env
+├── README.md
+└── start.sh
+
+## Tecnologías Utilizadas
+
+### Frontend
+- React (v18.2.0)
+- React Router (v6.23.1)
+- Axios (v1.7.2)
+- Vite (v5.2.0)
+
+### Backend
+- Node.js (v18.17)
+- Express (v4.17.1)
+- Sequelize (v6.37.3)
+- MySQL (v2.18.1)
