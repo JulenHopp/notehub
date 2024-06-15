@@ -47,7 +47,6 @@ const CreateNewCard = ({ note, onUpdate }) => {
     setModalIsOpen(false);
   };
 
-    console.log(note);
   return (
     <div className='card-container'>
       <div>

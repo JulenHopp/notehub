@@ -7,7 +7,6 @@ const CategoryDropdown = ({ selectedCategories, onCategoryChange }) => {
   const [categories, setCategories] = useState([]);
 
   const fetchCategories = async () => {
-    console.log('Fetching categories');
     try {
       const fetchedCategories = await getCategories();
       setCategories(fetchedCategories);
