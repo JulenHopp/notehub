@@ -56,6 +56,7 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 
 ```bash
 ./start.sh
+```
 
 ## Scripts
 
