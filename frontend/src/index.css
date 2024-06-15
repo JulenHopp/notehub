@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --background-color: #f7f9fc; /* Modern white */
+  --text-color: #333; /* Default text color */
+  --primary-color: #1882e8; /* Logo blue color */
+  --primary-hover-color: #156bbd; /* Slightly darker blue */
+  --cancel-color: #e8e8e8; /* Light grey for cancel button */
+  --cancel-hover-color: #d0d0d0; /* Slightly darker grey */
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+button.cancel {
+  background-color: var(--cancel-color);
+  color: var(--text-color);
+}
+
+button.cancel:hover {
+  background-color: var(--cancel-hover-color);
+}
+
+/* Inputs */
+input, textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}

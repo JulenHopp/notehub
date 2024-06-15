@@ -1,0 +1,102 @@
+.category-filter {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-open-menu-button{
+  height: 50px;
+  width: 221px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.filter-open-menu-button-active{
+  border-radius: 5px 5px 0 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 10px;
+  width: 200px;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown-menu-table-container{
+  max-height: 300px;
+  overflow-y: auto;
+  
+}
+
+.dropdown-menu table {
+  width: 100%;
+}
+
+.dropdown-menu td {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.dropdown-menu input {
+  margin: 0;
+  padding: 5px;
+}
+
+.dropdown-menu tr {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.delete-category-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-color: none;
+  color: var(--text-color);
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.delete-category-button:hover {
+  border: none;
+  background-color:  var(--cancel-hover-color);
+
+}
+
+.dropdown-menu .btn-primary {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.filter-apply-button{
+  align-self: flex-end;
+  width: 100%;
+}
+
+.add-category{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
