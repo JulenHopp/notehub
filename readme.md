@@ -13,6 +13,8 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
 
 ## Configuración del Proyecto
 
+### Linux/Mac/WSL
+
 1. Clona el repositorio desde GitHub:
 
     ```bash
@@ -50,7 +52,7 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
     EXIT;
     ```
 
-## Ejecución del Proyecto
+### Ejecución del Proyecto
 
 Para configurar y ejecutar la aplicación, usa el siguiente comando en tu terminal:
 
@@ -58,7 +60,7 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 ./start.sh
 ```
 
-## Configuracion en Windows
+### Configuracion en Windows
 
 1. Clona el repositorio desde GitHub:
 ```bash
