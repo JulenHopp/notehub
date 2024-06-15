@@ -70,6 +70,7 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 - `npm run preview`: Previsualiza el build de producción del frontend.
 
 ## Estructura del Proyecto
+```
 /project-root
 │
 ├── /backend
@@ -96,7 +97,7 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 ├── .env
 ├── README.md
 └── start.sh
-
+```
 ## Tecnologías Utilizadas
 
 ### Frontend
