@@ -7,7 +7,7 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
 ## Requisitos
 
 - Node.js (v18.17 o superior)
-- npm (v6.14 o superior)
+- npm (v10.7.0 o superior)
 - MySQL (u otra base de datos relacional compatible con Sequelize) instalado y en ejecución
 - Bash/Zsh (para ejecutar el script de inicio)
 
@@ -56,6 +56,48 @@ Para configurar y ejecutar la aplicación, usa el siguiente comando en tu termin
 
 ```bash
 ./start.sh
+```
+
+## Configuracion en Windows
+
+1. Clona el repositorio desde GitHub:
+```bash
+git clone https://github.com/ensolvers-github-challenges/HoppenstedtMandiola-116816.git
+cd HoppenstedtMandiola-116816
+```
+
+2. Crea un archivo '.env' dentro del directorio backend con el siguiente contenido:
+```env
+# MySQL configuration
+DB_USERNAME=my_user
+DB_PASSWORD=My_Str0ng_P@ssw0rd!
+DB_NAME=my_database
+DB_HOST=127.0.0.1
+```
+
+3. Configura MySQL creando una base de datos y un usuario. Abre la consola de MySQL como root y ejecuta los siguientes comandos:
+
+```sql
+CREATE DATABASE my_database;
+CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'My_Str0ng_P@ssw0rd!';
+GRANT ALL PRIVILEGES ON my_database.* TO 'my_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+4. Instala las dependencias y ejecuta el backend:
+
+```bash
+cd backend
+npm install
+npm start
+```
+5. En una nueva terminal, instala las dependencias y ejecuta el frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
 ## Scripts
