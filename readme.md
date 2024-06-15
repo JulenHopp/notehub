@@ -52,7 +52,7 @@ Esta es una aplicación web que permite a los usuarios crear, editar y eliminar 
     EXIT;
     ```
 
-### Ejecución del Proyecto
+6. Ejecución del Proyecto
 
 Para configurar y ejecutar la aplicación, usa el siguiente comando en tu terminal:
 
