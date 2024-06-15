@@ -2,15 +2,23 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 10px 15px;
+  padding: 0;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   z-index: 1000;
   background-color: var(--background-color);
 }
 
+.header-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 10px 15px;
+}
+
 .header-logo{
-  height: 100%;
+  height: 90%;
 }
